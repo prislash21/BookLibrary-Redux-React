@@ -1,28 +1,30 @@
-import React, { Component } from 'react'
+import React, { Component } from "react";
+import "App.css";
 
 class SignUp extends Component {
-    register() {
-        console.warn("state", this.state);
-        fetch("http://127.0.0.1:5000/user/signUp", {
-          method: "POST",
-          headers: {
-            Accept: "application/json",
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(this.state),
-        }).then((result) => {
-          result.json().then((resp) => {
-            console.log(resp);
-            localStorage.setItem("auth", JSON.stringify(resp));
-          });
-        });
-      }
-    render() {
-        return (
-            <div>
-                <div>
+  register() {
+    console.warn("state", this.state);
+    fetch("http://127.0.0.1:5000/user/signUp", {
+      method: "POST",
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(this.state),
+    }).then((result) => {
+      result.json().then((resp) => {
+        console.log(resp);
+        localStorage.setItem("auth", JSON.stringify(resp));
+      });
+    });
+  }
+  render() {
+    return (
+      <div className="signupform">
+        <form className="signup">
           <label>
             <input
+              className="input"
               type="text"
               placeholder="firstName"
               onChange={(e) => {
@@ -76,12 +78,13 @@ class SignUp extends Component {
             <br />
             <b />
           </label>
-          <button className="btn btn-primary" onClick={(e) => this.register()}>
+          </form>
+          <button className="myregbutton" onClick={(e) => this.register()}>
             <span>Registration</span>
           </button>
-        </div>
-            </div>
-        )
-    }
+        
+      </div>
+    );
+  }
 }
-export default SignUp
+export default SignUp;

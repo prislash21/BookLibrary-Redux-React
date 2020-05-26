@@ -1,8 +1,12 @@
 body{
-    margin: 0;
-    background:  url(/img/bg.jpg) no-repeat;
-    background-size: 100%;
-    background-position: center;
+
+    background:  url(/img/bg.svg) no-repeat;
+    /* display: flex;
+	justify-content: flex-end;
+    align-items: baseline */
+    
+    
+    
    
    
 }
