@@ -1,12 +1,14 @@
-body{
+body {
 
-    background:  url(/img/bg.svg) no-repeat;
+    background: url(/img/bgd.jpg);
+    background-size: 25%;
+
     /* display: flex;
 	justify-content: flex-end;
     align-items: baseline */
-    
-    
-    
-   
-   
+
+
+
+
+
 }

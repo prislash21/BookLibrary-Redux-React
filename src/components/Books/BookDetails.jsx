@@ -5,8 +5,8 @@ const BookDetails = (props) => {
     <div className="container section project-details">
       <div className="card z-depth-0">
         <div className="card-content">
-          <span className="card-title">Book Title- {id}</span>
-          <p> Author Name : Priota Joy</p>
+          <span className="card-title">Book Title- PYTHON : {id}</span>
+          <p> Author Name : Priota Roy</p>
         </div>
       </div>
     </div>
